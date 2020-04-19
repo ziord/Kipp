@@ -38,7 +38,7 @@ void Compression::compress(string fn) {
     cout<<"Compression rate: "<<cp_rate<<"%"<<endl;
 }
 
-void::Compression::uncompress(string fn, string fn2) {
+void Compression::uncompress(string fn, string fn2) {
     size_t found = fn.find(".kipp");
     if (found >= string::npos){
         error("Cannot uncompress :( -- Not a kipp file!");
