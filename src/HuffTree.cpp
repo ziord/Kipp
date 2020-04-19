@@ -24,10 +24,7 @@ void HTree::createTree() {
 	}
 	if (!pq.empty()) {
 		root = pq.top();
-//		(*root).val = END_;
 	}
-	//cout << root->val << " root val\n";
-	//exit(0);
 }
 
 vector<int> HTree::getCode(int ch) {
