@@ -32,7 +32,7 @@ void Compression::compress(string fn) {
 	cout<<"Compression of " <<fn<<" completed."<<endl;
     streamsize of_size = file_size(fn);
     streamsize cf_size = file_size(nfn);
-    double cp_rate = ((static_cast<double>(cf_size) / static_cast<double>(of_size)) * 100) ;
+    double cp_rate = (static_cast<double>(of_size - cf_size) / static_cast<double>(cf_size)) * 100;
     cout<<"Original file size: "<<of_size<<" bytes."<<endl;
     cout<<"Compressed file size: "<<cf_size<<" bytes."<<endl;
     cout<<"Compression rate: "<<cp_rate<<"%"<<endl;
